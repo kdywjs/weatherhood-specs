@@ -9,6 +9,7 @@
 - `weatherhood-specs/specs/<기능>/`: 해당 기능의 요구사항·설계·작업입니다.
 - `weatherhood-specs/contracts/`: 앱·서버 공통 인터페이스의 원본입니다.
 - `weatherhood-specs/rules/`: 작업에 관련된 팀 공통 규칙을 읽고 따릅니다.
+- 작업 등록, 진행상황 갱신 및 일정 관리 시 `weatherhood-specs/rules/task-management.md`를 읽고 따릅니다.
 - `weatherhood-specs/ai/skills/`: 관련 스킬이 있으면 해당 지침을 확인합니다.
 - `weatherhood-app/`, `weatherhood-server/`: 작업 대상 레포의 `AGENTS.md`가 있으면 함께 읽습니다. 내부 구현 문서는 해당 코드 레포에서 관리합니다.
 
