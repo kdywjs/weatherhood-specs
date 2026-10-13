@@ -2,24 +2,21 @@
 
 요구사항 원본: [requirements.md](requirements.md)
 
-## 참고와 디자인
-- 기존 파일: https://www.figma.com/design/nIUPdpIqFoqtPBCBPwOJ3N
-- 메인 v3: https://www.figma.com/design/nIUPdpIqFoqtPBCBPwOJ3N?node-id=19-126
-- 전체 콘텐츠 v1: https://www.figma.com/design/nIUPdpIqFoqtPBCBPwOJ3N?node-id=24-126
-- 첫 화면 v1: https://www.figma.com/design/nIUPdpIqFoqtPBCBPwOJ3N?node-id=24-512
-- Apple 구성 참고: https://support.apple.com/guide/iphone/check-the-weather-iph1ac0b35f/26/ios/26
+## 화면 구성
 - 메인 v3의 Noto Sans KR, 흰색 바탕, 청색 강조, 옅은 하늘색, 선형 날씨 아이콘을 사용한다. Apple의 화면 정보 순서를 참고하며 자체 디자인을 유지한다.
 - 430px 너비. 좌우 20px, 카드 간격 12px, 카드 모서리 16px. 긴 설명보다 항목명·수치·아이콘·짧은 기준 문구를 사용한다.
 - 상단 요약, 시간별 카드, 날짜별 목록은 전체 너비. 지표는 2열 카드. 대기질과 평균은 기준 설명과 비교 눈금이 필요하다.
-- Figma는 전체 세로 콘텐츠와 첫 화면을 보여주는 정적 시안이다. 실제 스크롤·재생 프로토타입은 별도 작업이다.
 
 ## 상태와 데이터 흐름
 정보 화면은 선택 지역의 현재 날씨와 미래 예보를 보여준다. 메인의 과거/미래 선택 시각에 따라 현재 요약을 바꾸지 않는다. 메인의 선택 상태는 별도로 보존한다. 명시적인 시간·날짜 선택 때만 메인 선택 상태를 바꾸고 재생한다.
 
 날짜·시각 계산은 선택 지역의 현지 시간대를 기준으로 한다. 한국 예시는 Asia/Seoul. 앱은 탐색·재생 상태·표시 단위를 관리하고, 서버/공급처는 예보 및 지표를 제공한다. API 필드, 집계 방식, 유효 범위는 아직 계약으로 정의하지 않는다.
 
-## 예시
-서울 중구, 2026-10-10 15시, 현재 12도·비/바람, 오늘 최저 10도 최고 18도. 메인 v3와 같은 지역·시각·기온을 사용한다. 10일과 시간별·카드 수치는 레이아웃 검토를 위한 가상 예시다.
-
-## 디자인 검증 기록
-2026-10-10 JSON Import / Export로 기존 파일에 두 프레임을 추가했다. 메인 v3 및 기존 화면은 보존했다. 전체 콘텐츠는 (4500, 100), 첫 화면은 (5010, 100)에 배치했다. 텍스트·프레임·SVG 벡터로 구성했으며 전체 UI를 이미지로 가져오지 않았다. JSON 텍스트는 메인과 같은 Noto Sans KR을 사용한다. 브라우저 캔버스에서 요약·시간별·10일 목록·8개 카드·하단 탭의 표시를 확인했다. 첫 화면은 카드로 이어지는 콘텐츠를 잘라 보여주는 정적 시안이며 스크롤이나 재생이 연결된 프로토타입은 아니다. 기존 메인 v3의 주간 탭 문구는 아직 변경하지 않았으며 공통 네비게이션 반영 시 날씨 정보로 통일한다.
+## 참고 및 검증
+- 시안: [전체 콘텐츠 v1](https://www.figma.com/design/nIUPdpIqFoqtPBCBPwOJ3N?node-id=24-126), [첫 화면 v1](https://www.figma.com/design/nIUPdpIqFoqtPBCBPwOJ3N?node-id=24-512).
+- 디자인 기준: [메인 v3](https://www.figma.com/design/nIUPdpIqFoqtPBCBPwOJ3N?node-id=19-126), [Apple 날씨 구성 참고](https://support.apple.com/guide/iphone/check-the-weather-iph1ac0b35f/26/ios/26).
+- 시안의 서울 중구, 2026-10-10 15시, 12도·비/바람, 최저 10도·최고 18도는 가상 예시다. 나머지 시간별·10일·카드 수치도 레이아웃 검토용이다.
+- 기존 파일에 두 프레임을 추가하고 기존 시안은 보존했다. 텍스트·프레임·SVG 벡터로 구성했으며 전체 UI를 이미지로 가져오지 않았다. 서체는 Noto Sans KR이다.
+- 브라우저 캔버스에서 요약·시간별·10일 목록·8개 카드·하단 탭 표시를 확인했다. 전체 콘텐츠와 첫 화면은 정적 시안이며 실제 스크롤·재생·이동은 검증하지 않았다.
+- 기존 메인 시안의 주간 탭 문구는 본문의 날씨 정보 기준과 차이가 있다. 공통 네비게이션 반영 시 통일한다.
+- 확인 자료: 통합 작업 공간의 `design/figma/weather-information-v1-preview.png`.
