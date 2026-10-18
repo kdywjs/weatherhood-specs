@@ -14,6 +14,7 @@
 - 이슈·PR 작성 시 `weatherhood-specs/ai/skills/write-issue-pr/SKILL.md`를 따릅니다.
 - 스펙 원본과 루트 사본의 `AGENTS.md`를 동기화할 때는 `weatherhood-specs/ai/skills/sync-agents/SKILL.md`를 따릅니다.
 - `weatherhood-app/`, `weatherhood-server/`: 작업 대상 레포의 `AGENTS.md`가 있으면 함께 읽습니다. 내부 구현 문서는 해당 코드 레포에서 관리합니다.
+- Figma 작업은 [weatherHood 디자인](https://www.figma.com/design/zKUdPzZ43A0fXpTxpsUiIL/weatherHood-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=7dxr3oDq6d6uKqLJ-1) 파일에서 진행합니다.
 
 ## 스펙 합의 후 구현
 
