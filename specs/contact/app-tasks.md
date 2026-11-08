@@ -13,4 +13,3 @@
 ## 참고 및 검증
 - 관련 요구사항: [requirements.md](requirements.md), 설계·정적 확인 및 미검증 범위: [design.md](design.md).
 - 관리 기준: [작업 및 일정 관리](../../rules/task-management.md). 문의 전용 Issue·Project 항목은 미정이다. 이번 작업에서는 Issue #2와 GitHub Project를 수정하지 않는다.
-- 커밋·푸시는 수행하지 않는다.

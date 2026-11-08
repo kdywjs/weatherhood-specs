@@ -13,14 +13,15 @@
 - `weatherhood-specs/ai/skills/`: 관련 스킬이 있으면 해당 지침을 확인합니다.
 - 이슈·PR 작성 시 `weatherhood-specs/ai/skills/write-issue-pr/SKILL.md`를 따릅니다.
 - 스펙 원본과 루트 사본의 `AGENTS.md`를 동기화할 때는 `weatherhood-specs/ai/skills/sync-agents/SKILL.md`를 따릅니다.
-- `weatherhood-app/`, `weatherhood-server/`: 작업 대상 레포의 `AGENTS.md`가 있으면 함께 읽습니다. 내부 구현 문서는 해당 코드 레포에서 관리합니다.
+- `weatherhood-app/`, `weatherhood-server/`: 작업 대상 레포의 `AGENTS.md`가 있으면 함께 읽습니다. 기능별 구현 설계는 스펙 레포에, 플랫폼 공통 구조·실행·운영 문서는 해당 코드 레포에 둡니다.
 - Figma 작업은 [weatherHood 디자인](https://www.figma.com/design/zKUdPzZ43A0fXpTxpsUiIL/weatherHood-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=7dxr3oDq6d6uKqLJ-1) 파일에서 진행합니다.
 
 ## 문서 책임과 원본
 
 - 모든 기능과 앱·서버 문서를 작성·수정·리뷰할 때 `weatherhood-specs/rules/spec-documentation.md`의 문서 책임 기준을 따릅니다.
 - 요구사항·예외·수용 기준, 화면 동작과 앱·서버 책임, API 계약은 스펙 레포에 둡니다.
-- 기술 선택·버전·내부 코드 구조·DB 설계·실행·테스트·배포·운영 문서는 해당 코드 레포에 둡니다.
+- 기능별 폴더에 `requirements.md`, `design.md`, `app-tasks.md`, `server-tasks.md`를 모읍니다. `design.md`는 공통 흐름과 앱·서버 구현 설계(외부 연동·DB·검색 등)를 포함하고, 작업·테스트 계획은 플랫폼별 작업 문서로 나눕니다.
+- 플랫폼 공통 기술 선택·버전·패키지 구조·실행·테스트 실행·배포·운영 문서는 해당 코드 레포에 둡니다. 실제 코드·마이그레이션·자동 테스트도 코드 레포에서 관리합니다.
 - 같은 내용의 원본은 한 곳에만 두고 다른 문서에서는 링크로 참조합니다. 기존 문서에도 같은 기준을 적용합니다.
 - 구현이 공통 동작·계약에 영향을 주면 관련 스펙도 함께 갱신합니다. 미정 사항을 구현 기본값으로 확정하거나 이전 검증을 현재 구현의 증적으로 표시하지 않습니다.
 
