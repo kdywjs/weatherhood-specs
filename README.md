@@ -46,7 +46,7 @@ specs/<기능>/
 
 실제 기능을 정의할 때 세 문서를 만듭니다. 작성·수정 전에 [스펙 문서 작성 규칙](rules/spec-documentation.md)을 읽습니다. 본문은 기능의 현재 기준으로 통합하고, 참고 자료·승인 근거·검증 증적은 마지막에 모읍니다. 변경 이력과 논의 경과는 Git·Issue·PR에서 관리합니다.
 
-지역별 날씨의 기상청 수집·저장·전달 기준은 [날씨 데이터 스펙](specs/weather-data/requirements.md), 앱·서버 사이 조회 형식은 [날씨 API 계약](contracts/weather-api.md)에서 관리합니다. 서버 내부 기술 선택과 구조는 [서버 설계](../weatherhood-server/docs/architecture.md)가 원본입니다. 실제 공급처 인증 조회와 운영 정책은 추가 검증·결정이 필요합니다.
+오늘 24시간의 데이터 제공 요구사항은 [오늘 날씨](specs/today-weather/requirements.md), 공통·다른 날짜의 날씨 맥락은 [날씨 데이터 스펙](specs/weather-data/requirements.md), 앱·서버 사이 조회 형식은 [날씨 API 계약](contracts/weather-api.md)에서 관리합니다. 오늘 날씨의 초기 설계·플랫폼별 작업 계획은 같은 기능 폴더에 있으며, [오늘 날씨 API 계약](contracts/today-weather-api.md)과 공급처 표본 조회 결과를 함께 관리합니다. 전국 제공 범위와 운영 성능 검증은 후속 작업입니다. 서버 내부 기술 선택과 구조는 [서버 설계](../weatherhood-server/docs/architecture.md)가 원본입니다. 실제 공급처 인증 조회와 운영 정책은 추가 검증·결정이 필요합니다.
 
 ## 로컬 작업 공간
 
