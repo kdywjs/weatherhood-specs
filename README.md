@@ -48,6 +48,10 @@ specs/<기능>/
 
 오늘 24시간의 데이터 제공 요구사항은 [오늘 날씨](specs/today-weather/requirements.md), 공통·다른 날짜의 날씨 맥락은 [날씨 데이터 스펙](specs/weather-data/requirements.md), 앱·서버 사이 조회 형식은 [날씨 API 계약](contracts/weather-api.md)에서 관리합니다. 오늘 날씨의 초기 설계·플랫폼별 작업 계획은 같은 기능 폴더에 있으며, [오늘 날씨 API 계약](contracts/today-weather-api.md)과 공급처 표본 조회 결과를 함께 관리합니다. 전국 제공 범위와 운영 성능 검증은 후속 작업입니다. 서버 내부 기술 선택과 구조는 [서버 설계](../weatherhood-server/docs/architecture.md)가 원본입니다. 실제 공급처 인증 조회와 운영 정책은 추가 검증·결정이 필요합니다.
 
+FO의 캐릭터·배경 표현은 [날씨 표현](specs/weather-presentation/requirements.md), 주간 목록과 전환은 [날씨 정보](specs/weather-information/requirements.md)를 따른다.
+
+제품 서체는 [타이포그래피](docs/typography.md)를 참조한다.
+
 ## 로컬 작업 공간
 
 ```text
