@@ -52,6 +52,8 @@ FO의 캐릭터·배경 표현은 [날씨 표현](specs/weather-presentation/req
 
 제품 서체는 [타이포그래피](docs/typography.md)를 참조한다.
 
+Apple 로그인·세션·탈퇴는 [로그인 요구사항](specs/authentication/requirements.md)과 [인증 API 계약](contracts/auth-api.md), 공개 지역 검색·GPS 변환 및 개인 지역은 [지역 API 계약](contracts/region-api.md)을 따른다.
+
 ## 로컬 작업 공간
 
 ```text

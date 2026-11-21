@@ -1,7 +1,10 @@
-# location-selection 서버 작업
+# 지역 선택 서버 작업
 
-[요구사항](requirements.md)과 [설계](design.md)를 따른다. 담당·일정·상태는 GitHub Project에서 관리한다.
+[요구사항](requirements.md), [설계](design.md), [API 계약](../../contracts/region-api.md)을 따른다.
 
-## 작업과 의존 관계
+- 기존 행정동 DB 검색·ID 조회와 카카오 H 코드 매핑.
+- 사용자별 저장·삭제·순서·기본 지역 API 및 트랜잭션.
+- 검색 내부 공백·특수문자·페이지, 좌표 범위·매핑 부재·외부 실패 검증.
+- 중복과 동시 추가·최대 개수, 사용자 격리, 순서 충돌, 기본 지역 삭제, 탈퇴 후 개인 데이터 삭제 검증.
 
-행정동 원본 자료와 코드 매핑을 검증하고 지역 목록을 적재한다. 카카오 좌표→행정동 변환과 내부 지역 ID 연결, 자체 지역 검색, 사용자별 지역 조회·추가·삭제·순서 변경을 설계·구현한다. 구현 전 미정 정책과 API 계약을 합의하고 중복 방지·사용자 격리·매핑 실패·외부 호출 실패를 검증한다.
+[서버 이슈 #18](https://github.com/kdywjs/weatherhood-server/issues/18), [Project](https://github.com/orgs/kdywjs/projects/1). 앱 연결은 [앱 작업](app-tasks.md)을 따른다.
